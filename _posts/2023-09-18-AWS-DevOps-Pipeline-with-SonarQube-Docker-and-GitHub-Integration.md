@@ -61,23 +61,32 @@ SSH into the Jenkin Instance to Install Jenkins into the Instance
 ![Jenkins-Instance](/assets/images/favicon/JenkinsWebsite.PNG)
 
 * Choose your operating system and copy the command
+![Jenkins-Instance](/assets/images/favicon/copycode.PNG)
 
 * Navigate back to the ssh insyance and copy the command to the terminal. This installs Jenkins to the instance
+![Jenkins-Instance](/assets/images/favicon/COPYJENKINCODE.PNG)
 
 * Navigate back to the aws console, in your instance under security click the security group rules so as to edit the inbound rules to allow for port 80
+![Jenkins-Instance](/assets/images/favicon/Networking.PNG)
+
+![Jenkins-Instance](/assets/images/favicon/securitygroups.PNG)
 
 * Add a new rule that allows for inbound from anywhere through port 8080 and save rule
+![Jenkins-Instance](/assets/images/favicon/EDITINBOUDRULES.PNG)
+![Jenkins-Instance](/assets/images/favicon/Port8080.PNG)
 
 * Use the command "systemctl status jenkins" to verify the installation of Jenkins.
+![Jenkins-Instance](/assets/images/favicon/validateinstallation.PNG)
 
 * On running status, navigate to the instance, copy its public ip and paste it in a new browser and access Jenkins through port 8080
+![Jenkins-Instance](/assets/images/favicon/securitygroups.PNG)
 
 * When prompted for password use "sudo cat /var/lib/jenkins/secrets/initialAdminPassword" to access your default passowrd.
-
+![Jenkins-Instance](/assets/images/favicon/securitygroups.PNG)
 * Paste the password and click continue. Click on Install Suggested plugins
-
+![Jenkins-Instance](/assets/images/favicon/securitygroups.PNG)
 * Create a user and create a password then click on save and continue then finish. 
-
+![Jenkins-Instance](/assets/images/favicon/securitygroups.PNG)
   
 
   
