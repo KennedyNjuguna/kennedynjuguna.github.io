@@ -11,8 +11,7 @@ navbar_entries:
 project_entries:
   - title:  CI\CD Pipeline Using Jenkins, SonarQube, Docker, Github Webhooks on AWS
     url: aws-devops-pipeline-with-sonarqube-docker-and-github-integration
-    desc: This is an example project, configured in _data/home.yml
-
+    desc: This project guides on how to integrate various components in AWS for seamless CI/CD
 
 old_project_entries:
   - title: Soopr
