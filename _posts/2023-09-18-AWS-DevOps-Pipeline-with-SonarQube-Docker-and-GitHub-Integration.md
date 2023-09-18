@@ -1,4 +1,4 @@
-# AWS DevOps Pipeline with SonarQube, Docker, and GitHub Integration"
+
 
  Welcome to this project, where we will harness the power of Jenkins CI/CD Pipeline, SonarQube, Docker, and GitHub Webhooks on the robust platform of Amazon Web Services (AWS). With Jenkins as our orchestrator, we automate every step of the development lifecycle, ensuring seamless integration, testing, and deployment. SonarQube, our code quality sentinel, scrutinizes every line of code to maintain the highest standards of software excellence. Docker empowers us to containerize our applications, granting us unparalleled portability and scalability. GitHub, the cornerstone of modern software development, is seamlessly integrated through webhooks, allowing us to synchronize our source code and collaborate effortlessly.
 
