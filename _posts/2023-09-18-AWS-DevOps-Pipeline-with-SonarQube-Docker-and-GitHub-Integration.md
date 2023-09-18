@@ -46,16 +46,19 @@ Use the Key we generated for Jenkins and Lauch Instance.
 SSH into the Jenkin Instance to Install Jenkins into the Instance
 
 * Copy the Public ip of the instance
+![Jenkins-Instance](/assets/images/favicon/IPPIC.PNG)
 
-* Open a terminal and navigate to the directory where you stored the Key.
-
-* SSH into your instance by using ssh -i (name of key) ubuntu/windows/macOs@public ip adress
+* Open a terminal and navigate to the directory where you stored the Key.SSH into your instance by using ssh -i (name of key) ubuntu/windows/macOs@public ip adress
+![Jenkins-Instance](/assets/images/favicon/Terminal.PNG)
 
 * update your instance using "sudo apt update"
+![Jenkins-Instance](/assets/images/favicon/Update.PNG)
 
 * Install JavaRuntime Environment in the instance by using "sudo apt install openjdk-11-jre"
+![Jenkins-Instance](/assets/images/favicon/installJRE.PNG)
 
 * Navigate to the website [Jenkins Site](jenkins.io) and click on Installing Jenkins under Documentation
+![Jenkins-Instance](/assets/images/favicon/JenkinsWebsite.PNG)
 
 * Choose your operating system and copy the command
 
