@@ -12,15 +12,15 @@ Login in to the AWS Management Console and create three EC2 Instances:
 
 Create an EC2 instance and choose Ubuntu as the instance type. 
 
-![Jenkins-Instance](assets/images/favicon/EC2JENKINS.PNG)
+![Jenkins-Instance](assets/images/favicon/EC2Jenkins.PNG)
 
 ![Jenkins-Instance](assets/images/favicon/EC2jENKINS2.PNG)
 
 Create a Key pair to allow for SSH access to your instance
-![Jenkins-Instance](assets/images/favicon/EC2jENKINS3.PNG)
+![Jenkins-Instance](assets/images/favicon/EC2JENKINS3.PNG)
 
 Launch Instance.
-![Jenkins-Instance](assets/images/favicon/EC2jENKINS4.PNG)
+![Jenkins-Instance](assets/images/favicon/EC2JENKINS4.PNG)
 
 * EC2 Instance for SonarQube
 
