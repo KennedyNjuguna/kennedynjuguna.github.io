@@ -5,7 +5,7 @@ title: About
 
 ## INTRO
 
-Hello! I'm Kennedy Njuguna, I am a Junior cloud engineer currently exploring and learning and validating my knowledge on Azure and AWS services and how they come about to optimize business workflows.
+Hello! I'm Kennedy Njuguna, I am a Junior cloud engineer currently exploring, learning and validating my knowledge on Azure and AWS services and how they come about to optimize business workflows.
 
 ## BIO
 
