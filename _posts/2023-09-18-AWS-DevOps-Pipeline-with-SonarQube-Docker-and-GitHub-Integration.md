@@ -47,53 +47,77 @@ Use the Key we generated for Jenkins and Lauch Instance.
 
 SSH into the Jenkin Instance to Install Jenkins into the Instance
 
-* Copy the Public ip of the instance
+Copy the Public ip of the instance
 ![Jenkins-Instance](/assets/images/favicon/IPPIC.PNG)
 
-* Open a terminal and navigate to the directory where you stored the Key.SSH into your instance by using ssh -i (name of key) ubuntu/windows/macOs@public ip adress
+Open a terminal and navigate to the directory where you stored the Key.SSH into your instance by using ssh -i (name of key) ubuntu/windows/macOs@public ip adress
 ![Jenkins-Instance](/assets/images/favicon/Terminal.PNG)
 
-* update your instance using "sudo apt update"
+Update your instance using "sudo apt update"
 ![Jenkins-Instance](/assets/images/favicon/Update.PNG)
 
-* Install JavaRuntime Environment in the instance by using "sudo apt install openjdk-11-jre"
+Install JavaRuntime Environment in the instance by using "sudo apt install openjdk-11-jre"
 ![Jenkins-Instance](/assets/images/favicon/installJRE.PNG)
 
-* Navigate to the website [Jenkins Site](jenkins.io) and click on Installing Jenkins under Documentation
+Navigate to the website [Jenkins Site](jenkins.io) and click on Installing Jenkins under Documentation
 ![Jenkins-Instance](/assets/images/favicon/JenkinsWebsite.PNG)
 
-* Choose your operating system and copy the command
+Choose your operating system and copy the command
 ![Jenkins-Instance](/assets/images/favicon/copycode.PNG)
 
-* Navigate back to the ssh insyance and copy the command to the terminal. This installs Jenkins to the instance
+Navigate back to the ssh insyance and copy the command to the terminal. This installs Jenkins to the instance
 ![Jenkins-Instance](/assets/images/favicon/COPYJENKINCODE.PNG)
 
-* Navigate back to the aws console, in your instance under security click the security group rules so as to edit the inbound rules to allow for port 80
+Navigate back to the aws console, in your instance under security click the security group rules so as to edit the inbound rules to allow for port 80
 ![Jenkins-Instance](/assets/images/favicon/Networking.PNG)
 
 ![Jenkins-Instance](/assets/images/favicon/securitygroups.PNG)
 
-* Add a new rule that allows for inbound from anywhere through port 8080 and save rule
+Add a new rule that allows for inbound from anywhere through port 8080 and save rule
 ![Jenkins-Instance](/assets/images/favicon/EDITINBOUDRULES.PNG)
 
 ![Jenkins-Instance](/assets/images/favicon/Port8080.PNG)
 
-* Use the command "systemctl status jenkins" to verify the installation of Jenkins.
+Use the command "systemctl status jenkins" to verify the installation of Jenkins.
 ![Jenkins-Instance](/assets/images/favicon/validateinstallation.PNG)
 
-* On running status, navigate to the instance, copy its public ip and paste it in a new browser and access Jenkins through port 8080
+On running status, navigate to the instance, copy its public ip and paste it in a new browser and access Jenkins through port 8080
 ![Jenkins-Instance](/assets/images/favicon/url.PNG)
 
-* When prompted for password use "sudo cat /var/lib/jenkins/secrets/initialAdminPassword" to access your default passowrd.
+When prompted for password use "sudo cat /var/lib/jenkins/secrets/initialAdminPassword" to access your default passowrd.
 ![Jenkins-Instance](/assets/images/favicon/jenkinspassword.PNG)
 
-* Paste the password and click continue. Click on Install Suggested plugins
+Paste the password and click continue. Click on Install Suggested plugins
 ![Jenkins-Instance](/assets/images/favicon/clickselectedplugins.PNG)
 
 
-* Create a user and create a password then click on save and continue then finish. 
+Create a user and create a password then click on save and continue then finish. 
 ![Jenkins-Instance](/assets/images/favicon/CreateUser.PNG)
 
 ![Jenkins-Instance](/assets/images/favicon/saveandfinish.PNG)
+
+# USE JENKINS
+
+Create Pipieline by clicking on new item and give it a name
+
+Select the project type then click OK
+
+Navigate to "Source Code Management" and choose git
+
+Copy the URL for the website repository from github under code,HTTPS and paste it under "Repository URL"
+
+
+Enable the "GitHub hook trigger for GITScm polling" to trigger the pipeline automatically when changes are made to the repository
+
+Navigate back to the Github Repo Settings and go to webhook. Click "Add Webhook"
+
+Copy the Jenkins URL and paste in under "Payload URL" adding "/github-webhook/"
+
+Ensure "Pull Request" and "Pushes" are ticked under "Which events would you like to trigger this webhook?". Add Webhoook
+
+# N/B WE HAVE AUTOMATED THE PROCESS WHEREBY WHEN A DEVELOPER CHANGES A CODE, JENKINS IS AUTOMATICALLY TRIGERED AND PULLS THE CODE FROM GITHUB
+
+
+
 
   
