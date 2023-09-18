@@ -87,7 +87,7 @@ misc_entries:
         url: https://github.com/abhinavs/moonwalk
 
       - title: originally built for abhinav's homepage
-       # url: https://www.abhinav.co
+        url: https://www.abhinav.co
 
       - title: this list is scalable and can be nested
         url: false
