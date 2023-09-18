@@ -8,34 +8,35 @@ So, whether you're an experienced DevOps engineer or just embarking on your jour
 
 Login in to the AWS Management Console and create three EC2 Instances:
 
-* EC2 Instance for Jenkins
+* **EC2 Instance for Jenkins**
 
 Create an EC2 instance and choose Ubuntu as the instance type. 
 
-![Jenkins-Instance](assets/images/favicon/EC2Jenkins.PNG)
+![Jenkins-Instance](/assets/images/favicon/EC2Jenkins.PNG)
 
-![Jenkins-Instance](assets/images/favicon/EC2jENKINS2.PNG)
+![Jenkins-Instance](/assets/images/favicon/EC2jENKINS2.PNG)
 
 Create a Key pair to allow for SSH access to your instance
-![Jenkins-Instance](assets/images/favicon/EC2JENKINS3.PNG)
+![Jenkins-Instance](/assets/images/favicon/EC2JENKINS3.PNG)
 
 Launch Instance.
-![Jenkins-Instance](assets/images/favicon/EC2JENKINS4.PNG)
+![Jenkins-Instance](/assets/images/favicon/EC2JENKINS4.PNG)
 
-* EC2 Instance for SonarQube
+
+* **EC2 Instance for SonarQube**
 
 Create an EC2 instance and choose Ubuntu as the instance type. 
-![Jenkins-Instance](assets/images/favicon/EC2SONARQUBE1.PNG)
-![Jenkins-Instance](assets/images/favicon/EC2SONARQUBE2.PNG)
+![Jenkins-Instance](/assets/images/favicon/EC2SONARQUBE1.PNG)
+![Jenkins-Instance](/assets/images/favicon/EC2SONARQUBE2.PNG)
 
 Use the Key we generated for Jenkins and Lauch Instance.
-![Jenkins-Instance](assets/images/favicon/EC2SONARQUBE3.PNG)
+![Jenkins-Instance](/assets/images/favicon/EC2SONARQUBE3.PNG)
 
-*EC2 Instance for Docker
+***EC2 Instance for Docker**
 
 Create an EC2 instance and choose Ubuntu as the instance type.
-![Jenkins-Instance](assets/images/favicon/EC2DOCKER.PNG)
-![Jenkins-Instance](assets/images/favicon/EC2DOCKER2.PNG)
+![Jenkins-Instance](/assets/images/favicon/EC2DOCKER.PNG)
+![Jenkins-Instance](/assets/images/favicon/EC2DOCKER2.PNG)
 
 Use the Key we generated for Jenkins and Lauch Instance.
-![Jenkins-Instance](assets/images/favicon/EC2DOCKER3.PNG)
+![Jenkins-Instance](/assets/images/favicon/EC2DOCKER3.PNG)
