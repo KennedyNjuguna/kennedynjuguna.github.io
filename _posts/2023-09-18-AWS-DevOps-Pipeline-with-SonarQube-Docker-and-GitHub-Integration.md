@@ -79,14 +79,17 @@ SSH into the Jenkin Instance to Install Jenkins into the Instance
 ![Jenkins-Instance](/assets/images/favicon/validateinstallation.PNG)
 
 * On running status, navigate to the instance, copy its public ip and paste it in a new browser and access Jenkins through port 8080
-![Jenkins-Instance](/assets/images/favicon/securitygroups.PNG)
+![Jenkins-Instance](/assets/images/favicon/url.PNG)
 
 * When prompted for password use "sudo cat /var/lib/jenkins/secrets/initialAdminPassword" to access your default passowrd.
-![Jenkins-Instance](/assets/images/favicon/securitygroups.PNG)
+![Jenkins-Instance](/assets/images/favicon/jenkinspassword.PNG)
+
 * Paste the password and click continue. Click on Install Suggested plugins
-![Jenkins-Instance](/assets/images/favicon/securitygroups.PNG)
+![Jenkins-Instance](/assets/images/favicon/clickselectedplugins.PNG)
+
+
 * Create a user and create a password then click on save and continue then finish. 
-![Jenkins-Instance](/assets/images/favicon/securitygroups.PNG)
-  
+![Jenkins-Instance](/assets/images/favicon/CreateUser.PNG)
+![Jenkins-Instance](/assets/images/favicon/saveandfinish.PNG)
 
   
