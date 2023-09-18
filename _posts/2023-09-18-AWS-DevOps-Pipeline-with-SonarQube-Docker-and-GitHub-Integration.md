@@ -27,6 +27,7 @@ Launch Instance.
 
 Create an EC2 instance and choose Ubuntu as the instance type. 
 ![Jenkins-Instance](/assets/images/favicon/EC2SONARQUBE1.PNG)
+
 ![Jenkins-Instance](/assets/images/favicon/EC2SONARQUBE2.PNG)
 
 Use the Key we generated for Jenkins and Lauch Instance.
@@ -36,6 +37,7 @@ Use the Key we generated for Jenkins and Lauch Instance.
 
 Create an EC2 instance and choose Ubuntu as the instance type.
 ![Jenkins-Instance](/assets/images/favicon/EC2DOCKER.PNG)
+
 ![Jenkins-Instance](/assets/images/favicon/EC2DOCKER2.PNG)
 
 Use the Key we generated for Jenkins and Lauch Instance.
@@ -73,6 +75,7 @@ SSH into the Jenkin Instance to Install Jenkins into the Instance
 
 * Add a new rule that allows for inbound from anywhere through port 8080 and save rule
 ![Jenkins-Instance](/assets/images/favicon/EDITINBOUDRULES.PNG)
+
 ![Jenkins-Instance](/assets/images/favicon/Port8080.PNG)
 
 * Use the command "systemctl status jenkins" to verify the installation of Jenkins.
@@ -90,6 +93,7 @@ SSH into the Jenkin Instance to Install Jenkins into the Instance
 
 * Create a user and create a password then click on save and continue then finish. 
 ![Jenkins-Instance](/assets/images/favicon/CreateUser.PNG)
+
 ![Jenkins-Instance](/assets/images/favicon/saveandfinish.PNG)
 
   
