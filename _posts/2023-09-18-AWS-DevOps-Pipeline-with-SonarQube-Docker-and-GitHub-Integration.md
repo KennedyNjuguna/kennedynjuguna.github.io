@@ -99,21 +99,31 @@ Create a user and create a password then click on save and continue then finish.
 # USE JENKINS
 
 Create Pipieline by clicking on new item and give it a name
+![Jenkins-Instance](/assets/images/favicon/NewItem.PNG)
 
 Select the project type then click OK
+![Jenkins-Instance](/assets/images/favicon/ProjectType.PNG)
 
 Navigate to "Source Code Management" and choose git
+![Jenkins-Instance](/assets/images/favicon/SourceCodeManagement.PNG)
 
 Copy the URL for the website repository from github under code,HTTPS and paste it under "Repository URL"
-
+![Jenkins-Instance](/assets/images/favicon/URLRepository.PNG)
 
 Enable the "GitHub hook trigger for GITScm polling" to trigger the pipeline automatically when changes are made to the repository
+![Jenkins-Instance](/assets/images/favicon/GithubHookTrigger.PNG)
 
 Navigate back to the Github Repo Settings and go to webhook. Click "Add Webhook"
+![Jenkins-Instance](/assets/images/favicon/AddWebhook.PNG)
 
 Copy the Jenkins URL and paste in under "Payload URL" adding "/github-webhook/"
+![Jenkins-Instance](/assets/images/favicon/PayloadURL.PNG)
 
 Ensure "Pull Request" and "Pushes" are ticked under "Which events would you like to trigger this webhook?". Add Webhoook
+![Jenkins-Instance](/assets/images/favicon/PullRequestsandPushes.PNG)
+
+![Jenkins-Instance](/assets/images/favicon/PullRequestsandPushes2.PNG)
+
 
 # N/B WE HAVE AUTOMATED THE PROCESS WHEREBY WHEN A DEVELOPER CHANGES A CODE, JENKINS IS AUTOMATICALLY TRIGERED AND PULLS THE CODE FROM GITHUB
 
