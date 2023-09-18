@@ -1,8 +1,8 @@
 navbar_entries:
-  - title: about
+  - title: About
     url: about
 
-  - title: blog
+  - title: Blog
     url: blog
 
   - title: website
@@ -57,45 +57,45 @@ footer_entries:
   - title: Ken's homepage
     url: https://kennedynjuguna.github.io
 
-  - title: twitter
+  - title: Twitter
     url: https://twitter.com/KenNgugi3
 
-  - title: github
+  - title: Github
     url: https://github.com/KennedyNjuguna
 
-  - title: feed
+  - title: Feed
     url: feed.xml
 
 misc_entries:
-  #- title: this is an example vertical list
-   # url: false
+  - title: this is an example vertical list
+   url: false
 
-  #- title: you can show or hide using a boolean flag in _config.yml
-   # url: false
+   title: you can show or hide using a boolean flag in _config.yml
+    url: false
 
-  #- title: and you can add data in _data/home.yml
-   # url: false
+  - title: and you can add data in _data/home.yml
+    url: false
 
-  #- title: Blog posts
-   # post_list: true
-    #url: false
+  - title: Blog posts
+    post_list: true
+    url: false
 
- # - title: moonwalk on the Internet
-  #  url: false
-   # entries:
-    #  - title: on Github
-     #   url: https://github.com/abhinavs/moonwalk
+  - title: moonwalk on the Internet
+    url: false
+    entries:
+      - title: on Github
+        url: https://github.com/abhinavs/moonwalk
 
-      #- title: originally built for abhinav's homepage
+      - title: originally built for abhinav's homepage
        # url: https://www.abhinav.co
 
-      #- title: this list is scalable and can be nested
-       # url: false
-       # entries:
-        #  - title: this is nested inside a nested list
-         #   url: false
+      - title: this list is scalable and can be nested
+        url: false
+        entries:
+          - title: this is nested inside a nested list
+            url: false
 
-          #- title: it is easy to use, see _data/home.yml to see how to configure it.
-           # url: false
+          - title: it is easy to use, see _data/home.yml to see how to configure it.
+            url: false
 
 
