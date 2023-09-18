@@ -4,7 +4,7 @@
 
 So, whether you're an experienced DevOps engineer or just embarking on your journey, join us as we navigate through the intricacies, challenges, and triumphs of our project. Together, we'll uncover how these tools, working in harmony on the AWS cloud, can revolutionize your development pipeline and set you on a path to DevOps excellence. Welcome aboard!
 
-## STEP ONE
+**## STEP ONE**
 
 Login in to the AWS Management Console and create three EC2 Instances:
 
@@ -40,3 +40,41 @@ Create an EC2 instance and choose Ubuntu as the instance type.
 
 Use the Key we generated for Jenkins and Lauch Instance.
 ![Jenkins-Instance](/assets/images/favicon/EC2DOCKER3.PNG)
+
+**## STEP TWO**
+
+SSH into the Jenkin Instance to Install Jenkins into the Instance
+
+* Copy the Public ip of the instance
+
+* Open a terminal and navigate to the directory where you stored the Key.
+
+* SSH into your instance by using ssh -i (name of key) ubuntu/windows/macOs@public ip adress
+
+* update your instance using "sudo apt update"
+
+* Install JavaRuntime Environment in the instance by using "sudo apt install openjdk-11-jre"
+
+* Navigate to the website [Jenkins Site](jenkins.io) and click on Installing Jenkins under Documentation
+
+* Choose your operating system and copy the command
+
+* Navigate back to the ssh insyance and copy the command to the terminal. This installs Jenkins to the instance
+
+* Navigate back to the aws console, in your instance under security click the security group rules so as to edit the inbound rules to allow for port 80
+
+* Add a new rule that allows for inbound from anywhere through port 8080 and save rule
+
+* Use the command "systemctl status jenkins" to verify the installation of Jenkins.
+
+* On running status, navigate to the instance, copy its public ip and paste it in a new browser and access Jenkins through port 8080
+
+* When prompted for password use "sudo cat /var/lib/jenkins/secrets/initialAdminPassword" to access your default passowrd.
+
+* Paste the password and click continue. Click on Install Suggested plugins
+
+* Create a user and create a password then click on save and continue then finish. 
+
+  
+
+  
