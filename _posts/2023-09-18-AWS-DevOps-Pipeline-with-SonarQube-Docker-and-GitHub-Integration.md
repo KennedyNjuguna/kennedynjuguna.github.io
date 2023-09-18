@@ -4,7 +4,7 @@
 
 So, whether you're an experienced DevOps engineer or just embarking on your journey, join us as we navigate through the intricacies, challenges, and triumphs of our project. Together, we'll uncover how these tools, working in harmony on the AWS cloud, can revolutionize your development pipeline and set you on a path to DevOps excellence. Welcome aboard!
 
-**## STEP ONE**
+## STEP ONE
 
 Login in to the AWS Management Console and create three EC2 Instances:
 
@@ -43,7 +43,7 @@ Create an EC2 instance and choose Ubuntu as the instance type.
 Use the Key we generated for Jenkins and Lauch Instance.
 ![Jenkins-Instance](/assets/images/favicon/EC2DOCKER3.PNG)
 
-**## STEP TWO**
+## STEP TWO
 
 SSH into the Jenkin Instance to Install Jenkins into the Instance
 
@@ -125,7 +125,9 @@ Ensure "Pull Request" and "Pushes" are ticked under "Which events would you like
 ![Jenkins-Instance](/assets/images/favicon/PullRequestsandPushes2.PNG)
 
 
-==WE HAVE AUTOMATED THE PROCESS WHEREBY WHEN A DEVELOPER CHANGES A CODE, JENKINS IS AUTOMATICALLY TRIGERED AND PULLS THE CODE FROM GITHUB==
+
+
+***WE HAVE AUTOMATED THE PROCESS WHEREBY WHEN A DEVELOPER CHANGES A CODE, JENKINS IS AUTOMATICALLY TRIGERED AND PULLS THE CODE FROM GITHUB***
 
 
 
