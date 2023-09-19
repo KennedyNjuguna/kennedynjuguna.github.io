@@ -130,6 +130,46 @@ Ensure "Pull Request" and "Pushes" are ticked under "Which events would you like
 ***WE HAVE AUTOMATED THE PROCESS WHEREBY WHEN A DEVELOPER CHANGES A CODE, JENKINS IS AUTOMATICALLY TRIGERED AND PULLS THE CODE FROM GITHUB***
 
 
+## STEP THREE: CREATING A SERVER FOR THE SONARQUBE
+
+Copy the Instance IP Address if the Sonarqube Instance and SSH into the instance
+
+
+Install Java JRE 11 
+
+
+Navigate to SonarQube website. Click on the download version of your choice and copt yhe link
+
+Naviagte to the terminal and use the wget command and paste the link to download SonarQube
+
+
+As the file is in the .zip format Install UnZip app
+
+Unzip the file and navigate to the sonarqube folder
+
+In the SonarQube folder go to the bin subfolder then depending on your OS go to your folder either macos, windows or linux
+
+Execute the batch file in the folder (sonar.sh)
+
+Navigate back to the aws console, in your instance under security click the security group rules so as to edit the inbound rules to allow for port 9000
+
+Add a new rule that allows for inbound from anywhere through port 9000 and save rule
+
+On operational status, navigate to the instance, copy its public ip and paste it in a new browser and access SonarQube through port 9000. Use admin as username and password to login. Update the password on the next prompt
+
+
+Click "Create project manually" and give a project name and key
+
+
+As our CI tools is Jenkins choose it as the "How do you want to analyze your repository" option and select your DevOps platform
+
+
+
+
+
+
+
+
 
 
   
