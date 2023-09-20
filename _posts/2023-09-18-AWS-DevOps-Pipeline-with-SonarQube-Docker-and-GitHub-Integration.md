@@ -223,7 +223,11 @@ SSH into the docker instance
 Navigate to the Install docker website and choose your OS then follow the "Install using the Apt repository" instructions
 ![Jenkins-Instance](/assets/images/favicon/DockerWebsite.PNG)
 
+Navigate back to the Jenkins website and click on "manage Jenkins" then click on "System" to add the Docker SerVER. Look for "Server Groups Center" and add a group. Input the details and click on save
 
 
+Navigate back to the Jenkins website and click on "manage Jenkins" then click on "System" to add the Docker SerVER. Look for "Server Groups Center" and add a server. Input the servername and use the Docker-Instance IP as "Server IP"
 
+
+Navigate back to the Jenkins-pipeline you created and click on configure. Add a build step to execute the remote shell.
   
