@@ -230,4 +230,23 @@ Navigate back to the Jenkins website and click on "manage Jenkins" then click on
 
 
 Navigate back to the Jenkins-pipeline you created and click on configure. Add a build step to execute the remote shell.
+
   
+Navigate back to the GitHub Repository and create a new DockerFile
+
+
+Navigate back to the configure tab and add build step "Execute Shell". and type the command "scp ./ubuntu@(Docker-Instance-ip):~/(path of folder you want to save contents)
+
+
+***IT IS NOT RECOMMENDED SAVING THE "DOCKERFILE" IN SAVE REPO AS WEBSITE***
+
+Verify contents of repo are in the folder
+
+Navigate back to the Jenkins-pipeline you created and click on configure. Add a build step to execute the remote shell. Remember to allow for ports configured in the Instance
+
+
+
+
+
+
+
