@@ -257,6 +257,6 @@ Navigate back to the Jenkins-pipeline you created and click on configure. Add a 
 
 
 ***YOUR WEBSITE SHOULD NOW BE WORKING***
-
+![Jenkins-Instance](/assets/images/favicon/congrats.PNG)
 
 
