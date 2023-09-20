@@ -25,7 +25,7 @@ Launch Instance.
 
 * **EC2 Instance for SonarQube**
 
-Create an EC2 instance and choose Ubuntu as the instance type. Make sure the Instance type has reached the minimum requirements for Sonarqube Intallation. (atleast t2.medium)
+Create an EC2 instance and choose Ubuntu as the instance type. Make sure the Instance type has reached the minimum requirements for SonarQube Installation. (atleast t2.medium)
 ![Jenkins-Instance](/assets/images/favicon/EC2SONARQUBE1.PNG)
 
 ![Jenkins-Instance](/assets/images/favicon/EC2SONARQUBE2.PNG)
@@ -133,65 +133,95 @@ Ensure "Pull Request" and "Pushes" are ticked under "Which events would you like
 ## STEP THREE: CREATING A SERVER FOR THE SONARQUBE
 
 Copy the Instance IP Address if the Sonarqube Instance and SSH into the instance
+![Jenkins-Instance](/assets/images/favicon/InstanceIP.PNG)
 
+![Jenkins-Instance](/assets/images/favicon/sshSonarqube.PNG)
 
 Install Java JRE 11 
+![Jenkins-Instance](/assets/images/favicon/InstallJRE.PNG)
 
-
-Navigate to SonarQube website. Click on the download version of your choice and copt yhe link
-
-Naviagte to the terminal and use the wget command and paste the link to download SonarQube
-
+Navigate to SonarQube website. Click on the download version of your choice and copy the link. Navigate to the terminal and use the wget command and paste the link to download SonarQube
+![Jenkins-Instance](/assets/images/favicon/DownloadSonarQube.PNG)
 
 As the file is in the .zip format Install UnZip app
+![Jenkins-Instance](/assets/images/favicon/InstallUnzip.PNG)
 
 Unzip the file and navigate to the sonarqube folder
+![Jenkins-Instance](/assets/images/favicon/Unzip.PNG)
+
+![Jenkins-Instance](/assets/images/favicon/SonarqubeFolder.PNG)
 
 In the SonarQube folder go to the bin subfolder then depending on your OS go to your folder either macos, windows or linux
+![Jenkins-Instance](/assets/images/favicon/FoldersandSubfolders.PNG)
 
 Execute the batch file in the folder (sonar.sh)
+![Jenkins-Instance](/assets/images/favicon/ExecuteBashFile.PNG)
 
 Navigate back to the aws console, in your instance under security click the security group rules so as to edit the inbound rules to allow for port 9000
+![Jenkins-Instance](/assets/images/favicon/SecurityGroup.PNG)
 
 Add a new rule that allows for inbound from anywhere through port 9000 and save rule
+![Jenkins-Instance](/assets/images/favicon/EditInboundRules.PNG)
+
+![Jenkins-Instance](/assets/images/favicon/Rule.PNG)
 
 On operational status, navigate to the instance, copy its public ip and paste it in a new browser and access SonarQube through port 9000. Use admin as username and password to login. Update the password on the next prompt
-
+![Jenkins-Instance](/assets/images/favicon/SonarWebsite.PNG)
 
 Click "Create project manually" and give a project name and key
+![Jenkins-Instance](/assets/images/favicon/CreateProjectManually.PNG)
 
+![Jenkins-Instance](/assets/images/favicon/ProjectNameandKey.PNG)
 
 As our CI tools is Jenkins choose it as the "How do you want to analyze your repository" option and select your DevOps platform
+![Jenkins-Instance](/assets/images/favicon/AnalyzewithJenkins.PNG)
 
+![Jenkins-Instance](/assets/images/favicon/DevopsPlatform.PNG)
+
+![Jenkins-Instance](/assets/images/favicon/OtheronJenkinsfile.PNG)
 
 Navigate to the "My Account" option and click on "security". Create a token
+![Jenkins-Instance](/assets/images/favicon/MyAccount.PNG)
 
-
+![Jenkins-Instance](/assets/images/favicon/Token.PNG)
 Navigate back to the Jenkins website and click on "manage Jenkins" then click on "Plugins" to install plugins
-
+![Jenkins-Instance](/assets/images/favicon/Plugins.PNG)
 
 Install "SonarQube Scanner" and "SSH2 Easy" Plugins
+![Jenkins-Instance](/assets/images/favicon/InstallPlugin.PNG)
 
+![Jenkins-Instance](/assets/images/favicon/InstallPlugin2.PNG)
 
 Navigate back to the Jenkins website and click on "manage Jenkins" then click on "Tools" and go to "Add SonarQube Scanner" 
+![Jenkins-Instance](/assets/images/favicon/AddSonarqubeScanner.PNG)
 
 Navigate back to the Jenkins website and click on "manage Jenkins" then click on "System" and go to "SonarQube Servers" and ADD SonarQube. Make sure to copy the SonarQube URL to the server url option then save. 
-
+![Jenkins-Instance](/assets/images/favicon/SonarQubeScanner.PNG)
 
 Navigate back to the Jenkins-pipeline you created and click on configure. Add a build step to execute the SonarQube Scanner and paste the key to the "Analysis properties"
+![Jenkins-Instance](/assets/images/favicon/PipelineConfigure.PNG)
+
+![Jenkins-Instance](/assets/images/favicon/ADDBuildStep.PNG)
+
+![Jenkins-Instance](/assets/images/favicon/AnalysisProperties.PNG)
 
 Navigate back to the Jenkins website and click on "manage Jenkins" then click on "System" so as to add the token we created and paste the token and give it an ID and save it. Now select the token and click on save.
+![Jenkins-Instance](/assets/images/favicon/AddToken.PNG)
 
+![Jenkins-Instance](/assets/images/favicon/SecretTextToken.PNG)
 
 Go back to the pipeline and build and verify its working. Navigate back to the sonarqube website and refresh the page and ensure the code passed.
+![Jenkins-Instance](/assets/images/favicon/BuildWorking.PNG)
 
+![Jenkins-Instance](/assets/images/favicon/SonarqubePassed.PNG)
 
 ## STEP THREE: DEPLOYING CODE TO DOCKER SERVER
 
 SSH into the docker instance
+![Jenkins-Instance](/assets/images/favicon/SSHDocker.PNG)
 
 Navigate to the Install docker website and choose your OS then follow the "Install using the Apt repository" instructions
-
+![Jenkins-Instance](/assets/images/favicon/DockerWebsite.PNG)
 
 
 
