@@ -25,7 +25,7 @@ Launch Instance.
 
 * **EC2 Instance for SonarQube**
 
-Create an EC2 instance and choose Ubuntu as the instance type. 
+Create an EC2 instance and choose Ubuntu as the instance type. Make sure the Instance type has reached the minimum requirements for Sonarqube Intallation. (atleast t2.medium)
 ![Jenkins-Instance](/assets/images/favicon/EC2SONARQUBE1.PNG)
 
 ![Jenkins-Instance](/assets/images/favicon/EC2SONARQUBE2.PNG)
@@ -181,6 +181,17 @@ Navigate back to the Jenkins website and click on "manage Jenkins" then click on
 Navigate back to the Jenkins-pipeline you created and click on configure. Add a build step to execute the SonarQube Scanner and paste the key to the "Analysis properties"
 
 Navigate back to the Jenkins website and click on "manage Jenkins" then click on "System" so as to add the token we created and paste the token and give it an ID and save it. Now select the token and click on save.
+
+
+Go back to the pipeline and build and verify its working. Navigate back to the sonarqube website and refresh the page and ensure the code passed.
+
+
+## STEP THREE: DEPLOYING CODE TO DOCKER SERVER
+
+SSH into the docker instance
+
+Navigate to the Install docker website and choose your OS then follow the "Install using the Apt repository" instructions
+
 
 
 
