@@ -164,10 +164,23 @@ Click "Create project manually" and give a project name and key
 As our CI tools is Jenkins choose it as the "How do you want to analyze your repository" option and select your DevOps platform
 
 
+Navigate to the "My Account" option and click on "security". Create a token
 
 
+Navigate back to the Jenkins website and click on "manage Jenkins" then click on "Plugins" to install plugins
 
 
+Install "SonarQube Scanner" and "SSH2 Easy" Plugins
+
+
+Navigate back to the Jenkins website and click on "manage Jenkins" then click on "Tools" and go to "Add SonarQube Scanner" 
+
+Navigate back to the Jenkins website and click on "manage Jenkins" then click on "System" and go to "SonarQube Servers" and ADD SonarQube. Make sure to copy the SonarQube URL to the server url option then save. 
+
+
+Navigate back to the Jenkins-pipeline you created and click on configure. Add a build step to execute the SonarQube Scanner and paste the key to the "Analysis properties"
+
+Navigate back to the Jenkins website and click on "manage Jenkins" then click on "System" so as to add the token we created and paste the token and give it an ID and save it. Now select the token and click on save.
 
 
 
