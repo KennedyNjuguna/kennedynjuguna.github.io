@@ -224,26 +224,36 @@ Navigate to the Install docker website and choose your OS then follow the "Insta
 ![Jenkins-Instance](/assets/images/favicon/DockerWebsite.PNG)
 
 Navigate back to the Jenkins website and click on "manage Jenkins" then click on "System" to add the Docker SerVER. Look for "Server Groups Center" and add a group. Input the details and click on save
+![Jenkins-Instance](/assets/images/favicon/GroupAdd.PNG)
 
+![Jenkins-Instance](/assets/images/favicon/ServerGroupAdd.PNG)
 
 Navigate back to the Jenkins website and click on "manage Jenkins" then click on "System" to add the Docker SerVER. Look for "Server Groups Center" and add a server. Input the servername and use the Docker-Instance IP as "Server IP"
+![Jenkins-Instance](/assets/images/favicon/ServerAdd.PNG)
 
+![Jenkins-Instance](/assets/images/favicon/ServerAdd2.PNG)
 
 Navigate back to the Jenkins-pipeline you created and click on configure. Add a build step to execute the remote shell.
+![Jenkins-Instance](/assets/images/favicon/RemoteShell.PNG)
 
+![Jenkins-Instance](/assets/images/favicon/RemoteShell2.PNG)
   
 Navigate back to the GitHub Repository and create a new DockerFile
-
+![Jenkins-Instance](/assets/images/favicon/DockerFile.PNG)
 
 Navigate back to the configure tab and add build step "Execute Shell". and type the command "scp ./ubuntu@(Docker-Instance-ip):~/(path of folder you want to save contents)
+![Jenkins-Instance](/assets/images/favicon/ExecuteShell.PNG)
 
+![Jenkins-Instance](/assets/images/favicon/ExecuteShell2.PNG)
 
 ***IT IS NOT RECOMMENDED SAVING THE "DOCKERFILE" IN SAVE REPO AS WEBSITE***
 
 Verify contents of repo are in the folder
+![Jenkins-Instance](/assets/images/favicon/repocontents.PNG)
+
 
 Navigate back to the Jenkins-pipeline you created and click on configure. Add a build step to execute the remote shell. Remember to allow for ports configured in the Instance
-
+![Jenkins-Instance](/assets/images/favicon/RemoteShellBuild.PNG)
 
 
 ***YOUR WEBSITE SHOULD NOW BE WORKING***
