@@ -65,7 +65,7 @@ Navigate to the website [Jenkins Site](jenkins.io) and click on Installing Jenki
 Choose your operating system and copy the command
 ![Jenkins-Instance](/assets/images/favicon/copycode.PNG)
 
-Navigate back to the ssh insyance and copy the command to the terminal. This installs Jenkins to the instance
+Navigate back to the ssh instance and copy the command to the terminal. This installs Jenkins to the instance
 ![Jenkins-Instance](/assets/images/favicon/COPYJENKINCODE.PNG)
 
 Navigate back to the aws console, in your instance under security click the security group rules so as to edit the inbound rules to allow for port 80
