@@ -13,6 +13,11 @@ project_entries:
     url: aws-devops-pipeline-with-sonarqube-docker-and-github-integration
     desc: This project guides on how to integrate various components in AWS for seamless CI/CD
 
+project_entries:
+  - title:  Terraform_Bootcamp_Workthrough
+    url: terraform_bootcamp_Workthrough.md
+    desc: This project is a summary of my progress as i undertake a Terraform Bootcamp
+
 old_project_entries:
   - title: Soopr
     url: https://github.com/KennedyNjuguna/aws-app-deploy
