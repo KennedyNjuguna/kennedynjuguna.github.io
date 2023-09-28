@@ -1,5 +1,8 @@
 # Terraform Beginner Bootcamp 2023
 
+
+# WEEk 0 (PROJECT PREP)
+
 ## Semantic Versioning
 
 This Project is going to utilize semantic versioning for its tagging.
