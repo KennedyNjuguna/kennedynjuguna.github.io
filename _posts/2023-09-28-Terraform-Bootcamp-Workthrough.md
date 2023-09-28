@@ -1,7 +1,7 @@
 # Terraform Beginner Bootcamp 2023
 
 
-# WEEk 0 (PROJECT PREP)
+# WEEK 0 (PROJECT PREP)
 
 ## Semantic Versioning
 
