@@ -9,11 +9,11 @@ navbar_entries:
     url: https://kennedynjuguna.github.io
 
 project_entries:
-  - title:  CI\CD Pipeline Using Jenkins, SonarQube, Docker, Github Webhooks on AWS
+  - title: CI\CD Pipeline Using Jenkins, SonarQube, Docker, Github Webhooks on AWS
     url: aws-devops-pipeline-with-sonarqube-docker-and-github-integration
     desc: This project guides on how to integrate various components in AWS for seamless CI/CD
 
-  - title:  Terraform_Bootcamp_Workthrough
+  - title: Terraform_Bootcamp and Documentation Of Workthrough
     url: terraform-bootcamp-workthrough
     desc: This project is a summary of my progress as I undertake a Terraform Bootcamp
 
