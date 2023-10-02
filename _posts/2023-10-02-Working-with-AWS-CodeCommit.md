@@ -20,7 +20,7 @@ Choose Create.
 
 ![AWS-CODECOMMIT](/assets/images/favicon/create.png)
 
-An empty repository named `name-repo` is created. :thumbsup:You have successfully created a new CodeCommit repository.
+An empty repository named `name-repo` is created. 👍You have successfully created a new CodeCommit repository.
 
 ## Connect to the Amazon EC2 instance
 
