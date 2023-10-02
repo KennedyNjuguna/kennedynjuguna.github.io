@@ -88,3 +88,81 @@ https://en.wikipedia.org/wiki/Chmod
 Init will not rerun if we restart an existing workspace
 
 https://www.gitpod.io/docs/configure/workspaces/workspace-lifecycle
+
+### Working with Env Vars
+
+We can list out all Environment Variable using the `env` command
+
+We can filter specific env vars using grep eg. `env | grep AWS`
+
+
+#### Setting and Unsetting Env Var
+
+In the terminal we can set using `export PROJECT_ROOT='/workspace/terraform-beginner-bootcamp-2023'`
+
+In the terminal we unset using `unset PROJECT_ROOT`
+
+We can set an env var temporarily when just running a command
+
+```sh
+PROJECT_ROOT='/workspace/terraform-beginner-bootcamp-2023' ./bin/print_message
+```
+
+Within a bash script we can set env without writing export eg.
+
+```sh
+#!/usr/bin/env bash
+
+PROJECT_ROOT='/workspace/terraform-beginner-bootcamp-2023'
+
+echo PROJECT_ROOT
+```
+
+## Printing Env Vars
+
+We can print an env var using echo eg. `echo PROJECT_ROOT`
+
+#### Scoping of Env Var
+
+When you open up new bash terminals in VSCode it will not be aware of env vars that you have set in another windows
+
+If you want to Env Vars to persist across all future bash terminals that are open you need to set env vars in your bash profile eg. `.bash_profile`
+
+#### Persisting Env Vars in Gitpod
+
+We can persist env vars into gitpod by storing them in Gitpod Secrets Storage.
+
+```sh
+gp env PROJECT_ROOT='/workspace/terraform-beginner-bootcamp-2023'
+```
+
+All future workspaces launched will set the env vars for all bash terminals opened in those workspaces.
+
+You can also set en vars in the `.gitpod.yml` but this can only contain non sensitive env vars.
+
+### AWS CLI Installation
+
+AWS CLI is installed for the project via the bash script [`./bin/install_aws_cli`](./bin/install_aws_cli)
+
+[Getting Started Install (AWS CLI)](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+[AWS CLI Env Vars](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html)
+
+We can check if our AWS credentials is configured correctly by running the following AWS CLI command:
+
+```sh
+aws sts get-caller-identity
+```
+
+If it is succesful you should see a json payload return that looks like this:
+
+```json
+{
+    "UserId": "AKIAIOSFODNN7EXAMPLE",
+    "Account": "123456789012",
+    "Arn": "arn:aws:iam::123456789012:user/terraform-beginner-bootcamp"
+}
+```
+
+We'll need to generate AWS CLI credentials from IAM user in order to use the AWS CLI
+
+
