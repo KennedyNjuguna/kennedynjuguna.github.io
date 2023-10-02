@@ -32,7 +32,7 @@ Connect to the instance using EC2 Instance Connect or SSH into the instance.
 
 ![AWS-CODECOMMIT](/assets/images/favicon/connecttoInstance.png)
 
-:thumbsup:You have successfully connected to a terminal session on the EC2 instance.
+👍You have successfully connected to a terminal session on the EC2 instance.
 
 
 ## Create a local repository using Git
@@ -71,7 +71,7 @@ Cloning into 'My-Repo'...
 warning: You appear to have cloned an empty repository.
 ```
 
-:thumbsup:You have successfully connected to and synchronized with the AWS CodeCommit repository.
+👍You have successfully connected to and synchronized with the AWS CodeCommit repository.
 
 ## Making a code change and first commit to the repo
 
@@ -181,7 +181,7 @@ Branch 'master' set up to track remote branch 'master' from 'origin'.
 ```
 **After you have pushed code to your AWS CodeCommit repository, you can view the contents using the AWS CodeCommit console.**
 
-:thumbsup:You have successfully pushed the changes from your local repository to the remote CodeCommit repository.
+👍You have successfully pushed the changes from your local repository to the remote CodeCommit repository.
 
 
 
