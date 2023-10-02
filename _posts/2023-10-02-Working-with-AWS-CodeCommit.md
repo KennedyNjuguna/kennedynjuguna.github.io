@@ -4,13 +4,21 @@ In the rapidly evolving landscape of software development, where innovation is t
 
 At the top of the AWS Management Console, in the search bar, search for and choose `CodeCommit`
 
+![AWS-CODECOMMIT](/assets/images/favicon/codecommit.png)
+
 On the AWS CodeCommit page, choose `Create repository`
+
+![AWS-CODECOMMIT](/assets/images/favicon/createrepo.png)
 
 On the Create repository page:
 - For Repository name, enter `name-repo`
 - For Description enter `Description-of-Repo`
 
+![AWS-CODECOMMIT](/assets/images/favicon/ReponameandDescription.PNG)
+
 Choose Create.
+
+![AWS-CODECOMMIT](/assets/images/favicon/create.png)
 
 An empty repository named `name-repo` is created. :thumbsup:You have successfully created a new CodeCommit repository.
 
@@ -18,7 +26,11 @@ An empty repository named `name-repo` is created. :thumbsup:You have successfull
 
 Create an Instance
 
+![AWS-CODECOMMIT](/assets/images/favicon/CreateInstance.PNG)
+
 Connect to the instance using EC2 Instance Connect or SSH into the instance.
+
+![AWS-CODECOMMIT](/assets/images/favicon/connecttoInstance.png)
 
 :thumbsup:You have successfully connected to a terminal session on the EC2 instance.
 
@@ -42,6 +54,7 @@ git config --global credential.UseHttpPath true
 
 Return to your web browser tab with the AWS CodeCommit console, which should be on the `name-repo` page and at the upper-right of the page, choose `Clone URL` , and then choose **Clone HTTPS**.
 
+![AWS-CODECOMMIT](/assets/images/favicon/CloneURL.png)
 
 The repository URL is copied to your clipboard and should look similar to this: _https://git-codecommit.us-east-1.amazonaws.com/v1/repos/name-repo_
 
