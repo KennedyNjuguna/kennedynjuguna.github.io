@@ -166,3 +166,100 @@ If it is succesful you should see a json payload return that looks like this:
 We'll need to generate AWS CLI credentials from IAM user in order to use the AWS CLI
 
 
+## Terraform Basics
+
+### Terraform Registry
+
+Terraform sources their providers and modules from the Terraform registry which is located at [registry.terraform.io](https://registry.terraform.io/)
+
+- **Providers** is an API that will allow to create resources in Terraform
+- **Modules** are a way to refactor or to make large amounts of terraform code modular, portable and sharable
+
+[Random Terraform Provider](https://registry.terraform.io/providers/hashicorp/random)
+
+### Terraform Console
+
+We can see a list of all the Terraform commands by typing `terraform`
+
+
+### Terraform Init
+
+At the start of a new terraform project we will run `terraform init` to download the binaries for the terraform providers that we'll use in this project.
+
+
+#### Terraform Plan
+
+`terraform plan`
+
+This generates a changeset, about the state of our infrastructure and what wil be changed.
+
+We can output this changes ie. "plan" to be passed to an apply, but often you can just ignore outputting.
+
+#### Terraform Apply
+
+`terraform apply`
+
+This will run a plan and pass the changeset to be executed by terraform. Apply should prompt us yes or no.
+
+If we want to auto approve we can provide the auto approve flag eg. `terraform apply --auto-approve`
+
+
+## Terraform Lock Files
+
+`.terraform.lock.hcl` contains the locked versioning for the providers or modules that should be used with this project.
+
+The Terraform Lock File **should be committed** to your Version Control System (VSC) EG. gITHUB
+
+### Terraform State Files
+
+`.terraform.tfstate` cntains information about the current state of your infrastructure.
+
+This file **should not be committed** to your VSC.
+
+This file can contain sensitive data. 
+
+If you lose this file, you lose knowing the state of your infrastructure.
+
+`.terraform.tfstate.backup` is the previous state file state.
+
+### Terraform Directory
+
+`.terraform` directory contains binaries of terraform providers.
+
+### Terraform Destroy
+
+`terraform destroy`
+
+This will destroy resources
+
+## Issues with Terraform Cloud Login and Gitpod Workspace
+
+When attempting to run `terraform login` it will launch bash a wiswig view to generate a token. However it does not work as expected in Gitpod VsCode in the browser.
+
+The workaround is to manually generate a token in Terraform Cloud
+
+```
+https://app.terraform.io/app/settings/tokens?source=terraform-login
+```
+
+Then create and open the file manually here:
+
+```sh
+touch /home/gitpod/.terraform.d/credentials.tfrc.json
+open /home/gitpod/.terraform.d/credentials.tfrc.json
+```
+
+Provide the following code and (replace your token in the file):
+
+```json
+{
+    "credentials": {
+        "app.terraform.io": {
+            "token": "YOUR-TERRAFORM-CLOUD-TOKEN"
+        }
+    }
+}
+```
+
+
+
