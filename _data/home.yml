@@ -21,6 +21,11 @@ project_entries:
     url: working-with-aws-codecommit
     desc: This project is a demo of how to leverage AWS CloudCommit
 
+  - title: MultiCloud Migration of Application and Database to AWS and GCP
+    url: multicloud-migration-of-application-and-database-to-aws-and-gcp
+    desc: This project involve a multicloud migration of a company application and database to the cloud utilizing GCP and AWS
+
+
 old_project_entries:
   - title: Soopr
     url: https://github.com/KennedyNjuguna/aws-app-deploy
