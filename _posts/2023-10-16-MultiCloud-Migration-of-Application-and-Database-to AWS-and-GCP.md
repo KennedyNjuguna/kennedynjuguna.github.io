@@ -1,4 +1,4 @@
-In this project we are going seamlessly migrate an application and its database to a multi-cloud environment, strategically leveraging the strengths of both Amazon Web Services (AWS) and Google Cloud Platform (GCP). At the heart of this project lies a robust and versatile application that generates and manages valuable data in PDF format. 
+In this project we are going to seamlessly migrate an application and its database to a multi-cloud environment, strategically leveraging the strengths of both Amazon Web Services (AWS) and Google Cloud Platform (GCP). At the heart of this project lies a robust and versatile application that generates and manages valuable data in PDF format. 
 
 _Key highlights of our project:_
 
@@ -17,18 +17,24 @@ _Key highlights of our project:_
 
 - Access AWS console and go to IAM service. Under Access management, Click in "Users", then "Add users". Insert the User name terraform-en-1 and click in Next to create a programmatic user.
 
+![terraform1](https://github.com/KennedyNjuguna/kennedynjuguna.github.io/assets/88589168/1ecf85c6-23f9-4015-bd2f-a7456975b691)
+
 
 - On Set permissions, Permissions options, click in "Attach policies directly" button.
 
+<img width="524" alt="permissions" src="https://github.com/KennedyNjuguna/kennedynjuguna.github.io/assets/88589168/f7fad81b-f510-4f95-a1bd-e19628837222">
 
 - Type AmazonS3FullAccess in Search and select AmazonS3FullAccess.
 
+<img width="530" alt="AmazonS3FullAccess" src="https://github.com/KennedyNjuguna/kennedynjuguna.github.io/assets/88589168/b4af536a-d2ea-4ecc-a26c-a6049ef26aa7">
 
 - Click in Next and Review all details, then click Create user. This user has been created succesfuly and allows Terraform to be able to provision buckets in AWS.
 
+<img width="1112" alt="reviewandcreate" src="https://github.com/KennedyNjuguna/kennedynjuguna.github.io/assets/88589168/17ab59c7-ee51-4efd-8c65-199f1117decb">
 
 - To download the `access key`, Click on the user you have created then navigate to the **Security credentials** tab, scroll down and go to Access keys section and **Create access key**
 
+<img width="1130" alt="createaccesskey" src="https://github.com/KennedyNjuguna/kennedynjuguna.github.io/assets/88589168/c36175f9-0618-4e73-ac6a-f2dab088de59">
 
 - Select **Command Line Interface (CLI)** and **I understand the above recommendation and want to proceed to create an access key** checkbox then click **Next**. Click on **Create access key** and **Download .csv file**
 
@@ -82,9 +88,11 @@ terraform apply
 
 - Naviagate to Google Cloud Console and search **SQL**. Click on the provisioned database and navigate to **connections**. Check the **Private IP** option and under **Associated Networking** click on default.
 
+<img width="961" alt="SQLCONNECTION" src="https://github.com/KennedyNjuguna/kennedynjuguna.github.io/assets/88589168/6f194399-a913-44d5-a90e-5da2f0f2d023">
 
 - Click on **SET UP CONNECTION** and **ENABLE API** and then click on **Use an automatically allocated IP range** and Continue then **Create Connection**. Save the changes you have made.
 
+<img width="958" alt="ENABLEAPI" src="https://github.com/KennedyNjuguna/kennedynjuguna.github.io/assets/88589168/99f6221f-7c1d-45e3-a655-396e463936ca">
 
 ## Amazon Web Services
 
@@ -96,7 +104,9 @@ terraform apply
 - To download the `access key`, Click on the user you have created then navigate to the **Security credentials** tab, scroll down and go to Access keys section and **Create access key**. Select **Command Line Interface (CLI)** and **I understand the above recommendation and want to proceed to create an access key** checkbox then click **Next**. Click on **Create access key** and **Download .csv file**
 
 
-- Navigate to **Google Cloud SQL Instance** and create a new user **app** with passowrd on Cloud SQL MYSQL databse. 
+- Navigate to **Google Cloud SQL Instance** and create a new user **app** with passowrd on Cloud SQL MYSQL databse.
+
+<img width="857" alt="appuser" src="https://github.com/KennedyNjuguna/kennedynjuguna.github.io/assets/88589168/388e8f28-a836-4701-a919-eebe0f66e6b1">
 
 - Now Connect to Google Cloud Shell and download the app files to Google Cloud Shell using the `wget` command
 
