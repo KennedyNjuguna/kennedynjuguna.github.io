@@ -26,7 +26,7 @@ project_entries:
     desc: This project involve a multicloud migration of a company application and database.
 
     title: Application Migration on AWS
-    url: application migration on aws
+    url: application-migration-on-aws
     desc: On this project, we will migrate an application to the AWS cloud utilizing the AWS Application Migration Service
 
 
