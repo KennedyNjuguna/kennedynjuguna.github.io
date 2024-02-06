@@ -40,7 +40,27 @@ Now connect to the RDP using the username and password you set during VM creatio
 
 Download and install  Notepad++ and create a file that we expect to see on migrating the server. You can choose to add more applications or create folders and files that you expect to see on performing the migration operation.
 
+## Create a replication server in AWS and download agent
 
+Navigate back to the aws management console and search for Application Migration Service.
+<img width="947" alt="MGN" src="https://github.com/KennedyNjuguna/kennedynjuguna.github.io/assets/88589168/3878edf3-da39-42bf-b2d5-f8eceb1656cc">
+
+***NOTE: IF YOU HAVE NEVER INTERACTED WITH THE AWS MGN, MAKE SURE YOU HAVE ADMIN PRIVELEGES SO AS TO BE ABLE TO START UP THE SERVICE***
+
+On the side bar locate Replication Template and edit the configurations of the template.
+Edit the; 
+* Network - VPC and Subnet
+* Instance Type
+* EBS Volume Type
+* Security Group - Defines access to the server
+
+On the side bar locate Launch Template and edit the configurations of the template accordingly and save the template.
+<img width="943" alt="dd" src="https://github.com/KennedyNjuguna/kennedynjuguna.github.io/assets/88589168/42628b89-604c-4b60-8484-7eb0e058eb13">
+
+On the side bar locate Post-Launch Template and edit the configurations of the template and save the template. 
+<img width="948" alt="q" src="https://github.com/KennedyNjuguna/kennedynjuguna.github.io/assets/88589168/a59a2adb-3f94-4db7-a3c8-2164de0d9983">
+
+Now navigate to the Source Servers on the side bar and fill in the configurations of the server you want to replicate. 
 
 
 
