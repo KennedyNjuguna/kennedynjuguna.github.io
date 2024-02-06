@@ -25,6 +25,10 @@ project_entries:
     url: multicloud-migration-of-application-and-database-to-aws-and-gcp
     desc: This project involve a multicloud migration of a company application and database to the cloud utilizing GCP and AWS
 
+    title: Application Migration on AWS
+    url: application migration on aws
+    desc: On this project, we will migrate an application to the AWS cloud utilizing the AWS Application Migration Service
+
 
 old_project_entries:
   - title: Soopr
