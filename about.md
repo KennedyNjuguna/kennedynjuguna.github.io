@@ -18,7 +18,7 @@ A few details about me:
   
 ## Current Capabilities
 
-* Associate Knowedlege and Hands-on in Azure and AWS
+* Associate Knowedlege and Hands-on in AWS, GCP and Azure
 
 ### N/B
 
