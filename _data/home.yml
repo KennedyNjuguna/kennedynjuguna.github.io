@@ -20,14 +20,14 @@ project_entries:
   - title: Working with AWS CodeCommit
     url: working-with-aws-codecommit
     desc: This project is a demo of how to leverage AWS CloudCommit
+    
+  - title: Application Migration on AWS
+    url: application-migration-on-aws
+    desc: On this project, we will migrate an application to the AWS cloud utilizing the AWS Application Migration Service
 
   - title: MultiCloud Migration of Application and Database
     url: multicloud-migration-of-application-and-database-to-aws-and-gcp
     desc: This project involve a multicloud migration of a company application and database.
-
-    title: Application Migration on AWS
-    url: application-migration-on-aws
-    desc: On this project, we will migrate an application to the AWS cloud utilizing the AWS Application Migration Service
 
 
 old_project_entries:
