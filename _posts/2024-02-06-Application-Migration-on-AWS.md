@@ -5,9 +5,15 @@ Welcome to this project!! In this Project we are going to lift and shift an appl
 
 ***NB:*** **AS I AM NOT CURRENTLY HOSTING ON-PREM SERVERS, WE WILL LIFT AND SHIFT AN APPLICATION SERVER FROM THE AZURE CLOUD PLATFORM TAKING THE VMs CREATED IN AZURE AS THE ON-PREM SERVERS**
 
+## Table of Contents
+
+- [STEPS I WILL TAKE](#steps-i-will-take)
+  * [Creating Servers On-Prem](#creating-servers-on-prem)
+  * [Connecting to the On-Prem server to install apps](#connecting-to-the-on-prem-server-to-install-apps)
+
 ## STEPS I WILL TAKE
-- [Create Servers On-Prem (using Azure as the on-prem environment)](#Creating-Servers-On-Prem)
-- [Connect to the On-Prem server to install apps](#Connecting-to-the-On-Prem-server-to-install-apps)
+- Create Servers On-Prem (using Azure as the on-prem environment)
+- Connect to the On-Prem server to install apps
 - Create a replication server in AWS and download agent
 - Install agent on the On-Prem Windows Server
 - Launch replication; edit replication template, launch template and cutover template
