@@ -2,7 +2,7 @@ title: Ken's Projects
 author: Kennedy Njuguna
 url: https://kennedynjuguna.github.io # root address of the site
 description: > # description of the site (multiple lines allowed)
-  Ken's Project is a collection of blogs and projects performed on both aws and azure entailing different aspects from DevOps to storage to usage of kubernetes and many more cloud native solutions. Be sure to enrich yourself.
+  Ken's Project is a collection of blogs and projects performed on AWS, GCP and Azure entailing different aspects from DevOps to storage to usage of kubernetes and many more cloud native solutions. Be sure to enrich yourself.
 permalink: /:slug
 
 favicon: "./logo.png" # relative path to site's favicon
