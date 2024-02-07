@@ -90,7 +90,15 @@ The replication is ongoing in the aws console and depending on the Lifecycle sta
 
 
 ##  Launch the test process
-When the replication is at 100% and the lifecycle switches to "ready for testing" you can launch a test instance according to the launch testing we set and confirm if it works well then mark it as ready for cutover manually or let it automatically mark as ready for cutover.
+When the replication is at 100% and the lifecycle switches to "ready for testing" you can launch a test instance according to the launch testing we set. You can observe a running instance in the EC2 Dashboard that is running
+<img width="947" alt="asss" src="https://github.com/KennedyNjuguna/kennedynjuguna.github.io/assets/88589168/761efe90-52b9-4d1f-8673-d2510fa39cb5">
+
+<img width="946" alt="2" src="https://github.com/KennedyNjuguna/kennedynjuguna.github.io/assets/88589168/e6c5f51a-2491-48a7-9ec2-a65495699a2e">
+
+<img width="950" alt="3" src="https://github.com/KennedyNjuguna/kennedynjuguna.github.io/assets/88589168/ad572fb0-169b-453a-9eb5-fd0ce73ccdd3">
+
+Confirm if it works well then mark it as ***ready for cutover*** manually or let it automatically mark as ready for cutover.
+
 
 ## Cutover Process
 
