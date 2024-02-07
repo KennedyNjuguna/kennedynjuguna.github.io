@@ -102,7 +102,9 @@ Confirm if it works well then mark it as ***ready for cutover*** manually or let
 
 ## Cutover Process
 
-After testing and the lifecycle indicates "ready for cutover" you are now ready to initiate the cutover process. The testing instance is deleted and a working instance is now created.
+After testing and the lifecycle indicates "ready for cutover" you are now ready to initiate the cutover process. The testing instance is deleted and a working instance of your application is now created.
+
+
 
 
 
