@@ -29,6 +29,9 @@ project_entries:
     url: multicloud-migration-of-application-and-database-to-aws-and-gcp
     desc: This project involve a multicloud migration of a company application and database.
 
+  - title: Using Prometheus for Monitoring on Google Cloud
+    url: using-prometheus-for-Monitoring-on-google-cloud
+    desc: This project monitoring workloads using Prometheus.
 
 old_project_entries:
   - title: Soopr
