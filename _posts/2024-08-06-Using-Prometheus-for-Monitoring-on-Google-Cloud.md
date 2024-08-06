@@ -111,7 +111,7 @@ gcloud monitoring dashboards create --config='''
 '''
 ```
 
-**_Once created, navigate to Monitoring > Dashboards to see the newly created Prometheus Dashboard Example_**
+**_Once created, navigate to Monitoring > Dashboards to see the newly created ```Prometheus Dashboard Example```_**
 
 
 
