@@ -31,7 +31,7 @@ project_entries:
 
   - title: Using Prometheus for Monitoring on Google Cloud
     url: using-prometheus-for-monitoring-on-google-cloud
-    desc: This project monitoring workloads using Prometheus.
+    desc: This project involves monitoring workloads using Prometheus Managed Service by Google Cloud.
 
 old_project_entries:
   - title: Soopr
