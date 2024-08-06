@@ -64,8 +64,6 @@ footer_entries:
   - title: LinkedIn
     url: https://www.linkedin.com/in/kennedy-ngugi-6ab864205/
     
-  - title: Feed
-    url: feed.xml
 
 misc_entries:
   #- title: This is an example vertical list
