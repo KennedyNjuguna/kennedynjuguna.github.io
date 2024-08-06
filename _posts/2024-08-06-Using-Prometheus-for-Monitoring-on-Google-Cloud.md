@@ -18,4 +18,22 @@ _Key highlights of our project:_
 
 Run the command ```kubectl create ns gmp-test``` to create a namespace to do the work in
 
-# Task 3. Deploy the application
+# Task 3. Deploy the Test application
+
+Deploy a simple application which emits metrics at the /metrics endpoint:(I'll be using the qwiklabs lab test application provided)
+
+```kubectl -n gmp-test apply -f https://raw.githubusercontent.com/kyleabenson/flask_telemetry/master/gmp_prom_setup/flask_deployment.yaml```
+
+```kubectl -n gmp-test apply -f https://raw.githubusercontent.com/kyleabenson/flask_telemetry/master/gmp_prom_setup/flask_service.yaml```
+
+- Verify that this simple Python Flask app is serving metrics with the command ```url=$(kubectl get services -n gmp-test -o jsonpath='{.items[*].status.loadBalancer.ingress[0].ip}')```
+
+ ```curl $url/metrics```
+
+Output will look like
+
+```sh
+# HELP flask_exporter_info Multiprocess metric
+# TYPE flask_exporter_info gauge
+flask_exporter_info{version="0.18.5"} 1.0
+```
