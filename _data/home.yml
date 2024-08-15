@@ -35,7 +35,7 @@ project_entries:
 
   - title: Deploy Java Application on AWS 3-Tier Architecture
     url: deploy-java-application-on-aws-3-tier-architecture
-    desc: This project shows the deployment of a scalable, highly available and secured Java application on a 3-tier architecture and provide application access to the end users from public internet.
+    desc: This project shows the deployment of a scalable, highly available and secured Java application on a 3-tier architecture providing application access to the end users from public internet.
 
 
 
