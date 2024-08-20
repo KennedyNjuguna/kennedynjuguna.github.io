@@ -127,7 +127,22 @@ sudo service tomcat stop
 
 [How to install Java 11 on Amazon Linux 2023](https://linux.how2shout.com/how-to-install-java-on-amazon-linux-2023/)
 
+### Push custom memory metrics to Cloudwatch
 
+[How to push custom metrics to CloudWatch](https://repost.aws/knowledge-center/cloudwatch-push-custom-metrics)
+
+You can use SSM to install the CloudWatch agent then use the wizard to write the configuration file
+
+```sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-config-wizard```
+
+After you have finished with the configuration, start the cloudwatch agent with 
+
+```sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -c file:configuration-file-path -s```
+
+Your configuration file path is listed after finishing the configuration with the wizard
+
+
+## STEP FOUR: Create Golden AMI using Global AMI for Apache Maven Build Tool
 
 
 
