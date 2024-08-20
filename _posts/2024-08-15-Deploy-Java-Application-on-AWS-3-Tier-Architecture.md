@@ -66,8 +66,66 @@ Navigate to the Official Nginx Website and check on the documentation to install
 
 [How to push custom metrics to CloudWatch](https://repost.aws/knowledge-center/cloudwatch-push-custom-metrics)
 
+You can use SSM to install the CloudWatch agent then use the wizard to write the configuration file
+
+```sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-config-wizard```
+
+After you have finished with the configuration, start the cloudwatch agent with 
+
+```sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -c file:configuration-file-path -s```
+
+Your configuration file path is listed after finishing the configuration with the wizard
 
 
+
+## STEP THREE: Create Golden AMI using Global AMI for Apache Tomcat Application
+
+Use the AMI created to launch another instance. 
+
+SSH into the instance so as to: 
+
+* **Install Apache Tomcat**
+* **Configure Tomcat as Systemd service**
+* **Install JDK 11**
+
+### Install Apache Tomcat
+
+You can use the instructions from the official AWS Website
+
+[How toInstall Apache Tomcat](https://repost.aws/questions/QUxJyO-GtaSXesjCpv7InqXg/amazon-linux-2023-tomcat-versions-available)
+
+To  Configre Tomcat as Systemd service
+Step1: Create the systemd file: nano /etc/systemd/system/tomcat.service
+Step2: Copy 
+```
+[Unit]
+Description=Apache Tomcat
+After=network.target
+
+[Service]
+Type=forking
+
+User=tomcat10
+Group=tomcat10
+
+ExecStart=/opt/apache-tomcat-10.1.28/bin/startup.sh
+ExecStop=/opt/apache-tomcat-10.1.28/bin/shutdown.sh
+```
+* **Make sure you edit that and use your installation folder**
+Step3: Add a user ``` useradd tomcat10 ```
+Step4: Change user password ```passwd tomcat10```
+Step5: Run the cmd ```sudo systemctl daemon-reload```
+
+From now on, you can use following commands to start or stop the tomcat:
+```
+sudo service tomcat start
+sudo service tomcat stop
+```
+
+
+### Install JDK 11
+
+[How to install Java 11 on Amazon Linux 2023](https://linux.how2shout.com/how-to-install-java-on-amazon-linux-2023/)
 
 
 
